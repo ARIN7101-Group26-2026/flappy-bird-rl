@@ -1,5 +1,7 @@
 # Flappy Bird RL
 
+HKU ARIN7101 Project
+
 面向小组实验的 Flappy Bird 强化学习仓库。当前完成 **公共环境 + Random Baseline**：可复现实验、CSV 汇总、两张统计图、真实游戏视频，以及供 DQN / PPO 复用的评估接口。
 
 基于[项目讨论](https://chatgpt.com/share/6adc20ae-d04c-83ec-beb1-a891bec7ea00)的统一约定实现。DQN、PPO 配置是后续开发模板，尚未实现训练或产出模型；Reward Shaping 尚未启用。
