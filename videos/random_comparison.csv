@@ -1,0 +1,13 @@
+agent,config,train_seed,eval_seed,action_seed,train_steps,episode_steps,pipes_passed,episode_reward,terminated,truncated,flap_prob,split
+Random,random_p0.5,,42,1000042,0,50,0,-7.499999999999998,True,False,0.5,demo
+Random,random_p0.5,,43,1000043,0,50,0,-7.499999999999998,True,False,0.5,demo
+Random,random_p0.5,,44,1000044,0,50,0,-7.499999999999998,True,False,0.5,demo
+Random,random_p0.2,,42,1000042,0,50,0,3.8999999999999986,True,False,0.2,demo
+Random,random_p0.2,,43,1000043,0,50,0,2.0999999999999996,True,False,0.2,demo
+Random,random_p0.2,,44,1000044,0,50,0,3.8999999999999986,True,False,0.2,demo
+Random,random_p0.1,,42,1000042,0,50,0,3.8999999999999986,True,False,0.1,demo
+Random,random_p0.1,,43,1000043,0,50,0,3.8999999999999986,True,False,0.1,demo
+Random,random_p0.1,,44,1000044,0,50,0,3.8999999999999986,True,False,0.1,demo
+Random,random_p0.05,,42,1000042,0,31,0,2.0000000000000013,True,False,0.05,demo
+Random,random_p0.05,,43,1000043,0,31,0,2.0000000000000013,True,False,0.05,demo
+Random,random_p0.05,,44,1000044,0,50,0,3.8999999999999986,True,False,0.05,demo

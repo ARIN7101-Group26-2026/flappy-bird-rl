@@ -1,0 +1,4 @@
+agent,config,train_seed,eval_seed,action_seed,train_steps,episode_steps,pipes_passed,episode_reward,terminated,truncated,flap_prob,split
+Random,random_p0.5,,42,1000042,0,50,0,-7.499999999999998,True,False,0.5,demo
+Random,random_p0.5,,43,1000043,0,50,0,-7.499999999999998,True,False,0.5,demo
+Random,random_p0.5,,44,1000044,0,50,0,-7.499999999999998,True,False,0.5,demo

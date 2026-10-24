@@ -1,0 +1,2 @@
+# Run from the repository root; project dependencies live in pyproject.toml.
+-e .

@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flappy-bird-rl"
+version = "0.1.0"
+description = "Reproducible Flappy Bird environment and random-policy baseline"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = [
+  "flappy-bird-gymnasium==0.4.0",
+  "gymnasium==1.4.0",
+  "numpy==2.2.6",
+  "pygame==2.6.1",
+  "matplotlib==3.10.8",
+  "imageio==2.37.0",
+  "imageio-ffmpeg==0.6.0",
+  "pillow>=10,<13",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
+train = ["stable-baselines3==2.9.0", "tensorboard>=2.9,<3"]
+
+[project.scripts]
+flappy-rl = "flappy_bird_rl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]

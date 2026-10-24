@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-24T03:12:40.093245+00:00",
+  "python": "3.10.12",
+  "platform": "Linux-5.15.0-91-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "flappy-bird-rl": "0.1.0",
+    "flappy-bird-gymnasium": "0.4.0",
+    "gymnasium": "1.4.0",
+    "numpy": "2.2.6",
+    "pygame": "2.6.1",
+    "matplotlib": "3.10.8",
+    "imageio": "2.37.0",
+    "imageio-ffmpeg": "0.6.0",
+    "pillow": "12.3.0"
+  },
+  "environment": {
+    "env_id": "FlappyBird-v0",
+    "use_lidar": false,
+    "normalize_obs": true,
+    "max_episode_steps": 5000,
+    "pipe_gap": 100
+  },
+  "experiment": {
+    "flap_probs": [
+      0.5,
+      0.2,
+      0.1,
+      0.05
+    ],
+    "episodes": 100,
+    "split": "validation",
+    "seed_start": 1000,
+    "action_seed_offset": 1000000
+  },
+  "reward": "original environment reward (no shaping)",
+  "std_definition": "sample standard deviation (ddof=1); 0 for one episode"
+}

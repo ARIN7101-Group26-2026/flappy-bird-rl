@@ -1,0 +1,19 @@
+{
+  "status": "planned_template_not_trained",
+  "algorithm": "PPO",
+  "total_timesteps": 500000,
+  "train_seeds": [42, 43, 44],
+  "model_kwargs": {
+    "policy": "MlpPolicy",
+    "learning_rate": 0.0003,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.0,
+    "policy_kwargs": {"net_arch": [64, 64]},
+    "device": "cpu"
+  }
+}

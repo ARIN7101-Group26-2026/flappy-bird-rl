@@ -1,0 +1,7 @@
+{
+  "flap_probs": [0.5, 0.2, 0.1, 0.05],
+  "episodes": 100,
+  "split": "validation",
+  "seed_start": 1000,
+  "action_seed_offset": 1000000
+}

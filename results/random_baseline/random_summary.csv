@@ -1,0 +1,5 @@
+agent,config,train_seed,split,flap_prob,episodes,mean_pipes,std_pipes,median_pipes,max_pipes,mean_steps,std_steps,mean_reward,std_reward,terminated_episodes,truncated_episodes
+Random,random_p0.5,,validation,0.5,100,0.0,0.0,0.0,0,50.0,0.0,-7.649999999999998,0.774009631135756,100,0
+Random,random_p0.2,,validation,0.2,100,0.0,0.0,0.0,0,50.17,0.9107106782035332,-0.3909999999999995,3.6569870857653486,100,0
+Random,random_p0.1,,validation,0.1,100,0.07,0.25643239997624284,0.0,1,51.12,6.931526571114086,3.6819999999999977,1.6050035400697278,100,0
+Random,random_p0.05,,validation,0.05,100,0.05,0.2190429135575903,0.0,1,45.97,9.958961245577225,3.5239999999999987,1.0716851640799578,100,0
