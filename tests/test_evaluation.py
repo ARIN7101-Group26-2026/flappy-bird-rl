@@ -6,9 +6,9 @@ import gymnasium as gym
 import numpy as np
 import pytest
 
+from flappy_bird_rl.agents.random import RandomAgent
 from flappy_bird_rl.config import EnvConfig, RandomConfig
 from flappy_bird_rl.evaluate import evaluate_random, run_episode, save_results, summarize
-from flappy_bird_rl.random_agent import RandomAgent
 
 
 @pytest.mark.parametrize("p,expected", [(0.0, 0), (1.0, 1)])

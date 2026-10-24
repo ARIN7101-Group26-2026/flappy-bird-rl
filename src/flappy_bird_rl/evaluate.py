@@ -11,20 +11,14 @@ from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from importlib.metadata import version
 from pathlib import Path
-from typing import Protocol
 
 import gymnasium as gym
 import numpy as np
 
+from flappy_bird_rl.agents.base import Policy
+from flappy_bird_rl.agents.random import RandomAgent
 from flappy_bird_rl.config import EnvConfig, RandomConfig
 from flappy_bird_rl.env import make_env
-from flappy_bird_rl.random_agent import RandomAgent
-
-
-class Policy(Protocol):
-    def reset(self, seed: int) -> None: ...
-
-    def predict(self, observation: np.ndarray) -> int: ...
 
 
 @dataclass(frozen=True)

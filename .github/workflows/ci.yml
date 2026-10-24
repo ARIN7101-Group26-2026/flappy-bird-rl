@@ -21,4 +21,4 @@ jobs:
       - run: python -m pytest -q
       - run: flappy-rl check
       - run: flappy-rl random --episodes 3 --output-dir results/ci
-      - run: flappy-rl demo --episodes 1 --output videos/ci.mp4
+      - run: flappy-rl demo --episodes 1 --output videos/random/ci.mp4

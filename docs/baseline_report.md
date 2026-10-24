@@ -32,8 +32,8 @@ python -m flappy_bird_rl random --env-config configs/env.json --config configs/r
 
 ## 示范视频
 
-- `videos/random_demo.mp4`：标准 `p=0.5`，环境种子 42、43、44，连续 3 局，每局 50 步；共 153 帧，30 FPS，5.1 秒。
-- `videos/random_comparison.mp4`：四种概率各 3 局，均使用种子 42、43、44；按配置顺序连续录制，没有筛选成功片段；574 帧，约 19.13 秒，已解码验证。
+- `videos/random/random_demo.mp4`：标准 `p=0.5`，环境种子 42、43、44，连续 3 局，每局 50 步；共 153 帧，30 FPS，5.1 秒。
+- `videos/random/random_comparison.mp4`：四种概率各 3 局，均使用种子 42、43、44；按配置顺序连续录制，没有筛选成功片段；574 帧，约 19.13 秒，已解码验证。
 - 同名 `.csv` 保存每局结果，`.json` 保存依赖、环境参数、种子、帧率、帧数，`.png` 是首帧预览。
 
 视频为真实 `rgb_array` 帧，H.264、288×576（含 64 像素状态栏）。标准示范已实际解码验证帧数、分辨率和帧率；录制一致性集成测试还确认同一配置下有无录像的回合指标相同。

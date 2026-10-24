@@ -9,10 +9,10 @@ from pathlib import Path
 
 import numpy as np
 
+from flappy_bird_rl.agents.random import RandomAgent
 from flappy_bird_rl.config import EnvConfig, RandomConfig, load_env_config, load_random_config
 from flappy_bird_rl.env import make_env
 from flappy_bird_rl.evaluate import evaluate_random, run_episode, save_results, summarize
-from flappy_bird_rl.random_agent import RandomAgent
 
 
 def check_environment(config: EnvConfig) -> dict:
@@ -77,7 +77,7 @@ def build_parser() -> argparse.ArgumentParser:
     demo.add_argument("--flap-probs", nargs="+", type=float, default=[0.5])
     demo.add_argument("--episodes", type=int, default=3, help="Episodes per probability")
     demo.add_argument("--seed-start", type=int, default=42)
-    demo.add_argument("--output", type=Path, default=Path("videos/random_demo.mp4"))
+    demo.add_argument("--output", type=Path, default=Path("videos/random/random_demo.mp4"))
     demo.add_argument("--human", action="store_true", help="Use a desktop window instead of MP4")
 
     plot = subparsers.add_parser("plot", help="Regenerate figures from measured CSV")

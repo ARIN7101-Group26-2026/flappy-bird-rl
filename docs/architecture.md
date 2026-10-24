@@ -18,6 +18,8 @@ flowchart LR
 
 ## 策略与评估接口
 
+算法实现按 `src/flappy_bird_rl/agents/{random,dqn,ppo}/` 分包，策略适配放在各自的 `agent.py` 中，DQN/PPO 训练入口放在各自的 `train.py` 中。公共协议定义在 `agents/base.py`，视频按 `videos/{random,dqn,ppo}/` 归档。
+
 策略满足 `Policy` 协议：
 
 ```python

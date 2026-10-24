@@ -15,12 +15,3 @@ models/**/*.pth
 # Keep the small, verified baseline artifacts; ignore new experiment runs.
 results/*
 !results/random_baseline/
-videos/*
-!videos/random_demo.mp4
-!videos/random_demo.json
-!videos/random_demo.csv
-!videos/random_demo.png
-!videos/random_comparison.mp4
-!videos/random_comparison.json
-!videos/random_comparison.csv
-!videos/random_comparison.png

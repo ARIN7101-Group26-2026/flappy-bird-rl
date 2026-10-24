@@ -9,10 +9,10 @@ import imageio.v2 as imageio
 import numpy as np
 from PIL import Image, ImageDraw
 
+from flappy_bird_rl.agents.random import RandomAgent
 from flappy_bird_rl.config import EnvConfig, RandomConfig
 from flappy_bird_rl.env import make_env
 from flappy_bird_rl.evaluate import EpisodeResult, run_episode, write_csv, write_metadata
-from flappy_bird_rl.random_agent import RandomAgent
 
 
 def record_random(

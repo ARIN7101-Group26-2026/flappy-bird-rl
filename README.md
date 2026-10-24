@@ -121,7 +121,7 @@ Record policies as H.264 MP4 files at 30 FPS, or view them in a desktop window:
 
 ```bash
 # Record all four probabilities, three episodes each.
-flappy-rl demo --flap-probs 0.5 0.2 0.1 0.05 --output videos/random_comparison.mp4
+flappy-rl demo --flap-probs 0.5 0.2 0.1 0.05 --output videos/random/random_comparison.mp4
 
 # Watch a policy in a desktop window.
 flappy-rl demo --human --episodes 3 --flap-probs 0.1
@@ -129,35 +129,66 @@ flappy-rl demo --human --episodes 3 --flap-probs 0.1
 
 Recordings stream RGB frames directly to the encoder and include probability, seed, episode length, score, and reward overlays. Each MP4 has a matching episode CSV, metadata JSON, and PNG preview.
 
-- [Uniform random policy](videos/random_demo.mp4): three consecutive episodes, 5.1 seconds.
-- [Probability comparison](videos/random_comparison.mp4): twelve consecutive episodes, approximately 19 seconds.
+- [Uniform random policy](videos/random/random_demo.mp4): three consecutive episodes, 5.1 seconds.
+- [Probability comparison](videos/random/random_comparison.mp4): twelve consecutive episodes, approximately 19 seconds.
+
+Recordings and their metadata are versioned in the repository under `videos/<algorithm>/`. Browse the [video directory](videos/README.md) for playback links and reproduction commands.
+
+[![Random policy comparison](videos/random/random_comparison.png)](videos/random/random_comparison.mp4)
 
 ## Project Structure
 
 ```text
 flappy-bird-rl/
-├── configs/                 # Environment and experiment configurations
+├── configs/
+│   ├── env.json             # Shared environment configuration
+│   ├── random.json          # Random baseline configuration
+│   ├── dqn.json             # DQN configuration
+│   └── ppo.json             # PPO configuration
 ├── src/flappy_bird_rl/
+│   ├── agents/
+│   │   ├── base.py          # Shared Policy interface
+│   │   ├── random/
+│   │   │   └── agent.py     # Seeded Bernoulli policy
+│   │   ├── dqn/
+│   │   │   ├── agent.py     # DQN policy implementation
+│   │   │   └── train.py     # DQN training implementation
+│   │   └── ppo/
+│   │       ├── agent.py     # PPO policy implementation
+│   │       └── train.py     # PPO training implementation
 │   ├── env.py               # Shared Gymnasium environment factory
 │   ├── config.py            # Configuration loading and validation
-│   ├── random_agent.py      # Seeded Bernoulli policy
-│   ├── evaluate.py          # Policy interface, episode evaluation, and metrics
+│   ├── evaluate.py          # Episode evaluation and metrics
 │   ├── plot.py              # Score summaries and distribution plots
 │   ├── demo.py              # Video recording and metadata
 │   └── cli.py               # Command-line entry points
 ├── tests/                   # Environment, evaluation, CLI, and video tests
 ├── docs/                    # Architecture and experiment documentation
-├── models/                  # Model artifacts, organized by algorithm
+├── models/
+│   ├── dqn/                 # DQN checkpoints
+│   └── ppo/                 # PPO checkpoints
 ├── logs/                    # Experiment logs
 ├── results/random_baseline/ # Reference evaluation data and figures
-├── videos/                  # Recordings and episode metadata
+├── videos/
+│   ├── README.md            # Video index and playback links
+│   ├── random/              # Random MP4s, previews, and episode metadata
+│   ├── dqn/                 # DQN recordings
+│   └── ppo/                 # PPO recordings
 ├── .github/workflows/ci.yml
 ├── pyproject.toml
 ├── requirements.txt
 └── requirements-lock.txt
 ```
 
-Policies expose `reset(seed)` and `predict(observation)` methods for use with the shared episode runner. Evaluation exports a consistent schema for agent identity, configuration, training and evaluation seeds, training steps, episode metrics, and termination flags.
+Each algorithm has a dedicated implementation package:
+
+| Algorithm | Policy module | Training module | Configuration |
+| --- | --- | --- | --- |
+| Random | [agents/random/agent.py](src/flappy_bird_rl/agents/random/agent.py) | — | [random.json](configs/random.json) |
+| DQN | [agents/dqn/agent.py](src/flappy_bird_rl/agents/dqn/agent.py) | [agents/dqn/train.py](src/flappy_bird_rl/agents/dqn/train.py) | [dqn.json](configs/dqn.json) |
+| PPO | [agents/ppo/agent.py](src/flappy_bird_rl/agents/ppo/agent.py) | [agents/ppo/train.py](src/flappy_bird_rl/agents/ppo/train.py) | [ppo.json](configs/ppo.json) |
+
+Policies implement [the shared interface](src/flappy_bird_rl/agents/base.py) through `reset(seed)` and `predict(observation)`. Environment creation, episode evaluation, metrics, and video capture are shared across algorithm packages. Evaluation exports a consistent schema for agent identity, configuration, training and evaluation seeds, training steps, episode metrics, and termination flags.
 
 ## Development
 

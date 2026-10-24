@@ -11,14 +11,16 @@
 
 ## B / DQN（待实现）
 
-- [ ] 添加 `src/flappy_bird_rl/train_dqn.py`，读取 `configs/dqn.json` 中的 `model_kwargs`
+- [ ] 在 `src/flappy_bird_rl/agents/dqn/train.py` 中实现训练，读取 `configs/dqn.json` 中的 `model_kwargs`
+- [ ] 在 `src/flappy_bird_rl/agents/dqn/agent.py` 中接入公共 `Policy` 协议
 - [ ] 使用公共环境与 Monitor；定期保存 checkpoint、验证指标、真实采样步数和训练耗时
 - [ ] 比较 exploration_fraction = 0.1 / 0.3 / 0.5
 - [ ] 至少三个独立训练种子，统一测试与示范
 
 ## C / PPO（待实现）
 
-- [ ] 添加 `src/flappy_bird_rl/train_ppo.py`，读取 `configs/ppo.json` 中的 `model_kwargs`
+- [ ] 在 `src/flappy_bird_rl/agents/ppo/train.py` 中实现训练，读取 `configs/ppo.json` 中的 `model_kwargs`
+- [ ] 在 `src/flappy_bird_rl/agents/ppo/agent.py` 中接入公共 `Policy` 协议
 - [ ] 保存模型、训练诊断和真实采样步数
 - [ ] 比较 ent_coef = 0.00 / 0.01 / 0.03
 - [ ] 至少三个独立训练种子，统一测试与示范
