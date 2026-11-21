@@ -1,0 +1,759 @@
+{
+  "max_pipes_in_5000_steps": 132,
+  "training": {
+    "training_seeds": 20,
+    "steps": 9994240,
+    "first_step_with_all_validation_episodes_at_ceiling": [
+      3506176,
+      3506176,
+      3506176,
+      2506752,
+      2506752,
+      2506752,
+      2506752,
+      3006464,
+      3006464,
+      2506752,
+      2506752,
+      3006464,
+      2007040,
+      3506176,
+      3006464,
+      3506176,
+      2506752,
+      2506752,
+      2506752,
+      4005888
+    ],
+    "final_validation_survival_per_seed": [
+      1.0,
+      1.0,
+      1.0,
+      0.9688,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      0.9688,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "verification": {
+    "full": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 3373969,
+        "fatal_transitions": 1128,
+        "death_probability": 4.0618886032461887e-10,
+        "expected_pipes": 131.99999998698956,
+        "late_death_per_pipe": 6.593914207180758e-12,
+        "smallest_decision_margin": 9.312768973757102e-07
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3471629,
+        "fatal_transitions": 1253,
+        "death_probability": 0.0011674501489005173,
+        "expected_pipes": 131.90625376552794,
+        "late_death_per_pipe": 6.865404233501022e-06,
+        "smallest_decision_margin": 7.685165037685238e-08
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3566752,
+        "fatal_transitions": 1695,
+        "death_probability": 0.00034857122605680413,
+        "expected_pipes": 131.9556295842664,
+        "late_death_per_pipe": 2.8535586246106235e-08,
+        "smallest_decision_margin": 7.171122806681751e-07
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3648135,
+        "fatal_transitions": 1506,
+        "death_probability": 0.003473901711078753,
+        "expected_pipes": 131.7390699957443,
+        "late_death_per_pipe": 2.235364984100707e-05,
+        "smallest_decision_margin": 3.966529646959316e-07
+      },
+      "4": {
+        "verified_never_dies": false,
+        "reachable_states": 3637904,
+        "fatal_transitions": 1293,
+        "death_probability": 0.000346652122019675,
+        "expected_pipes": 131.9570238035867,
+        "late_death_per_pipe": 8.463613472147588e-09,
+        "smallest_decision_margin": 1.2347023847780747e-06
+      },
+      "5": {
+        "verified_never_dies": false,
+        "reachable_states": 3442456,
+        "fatal_transitions": 2031,
+        "death_probability": 6.5424199391372895e-09,
+        "expected_pipes": 131.99999979563998,
+        "late_death_per_pipe": 1.1055407186020899e-10,
+        "smallest_decision_margin": 1.3247771057933733e-06
+      },
+      "6": {
+        "verified_never_dies": false,
+        "reachable_states": 3490622,
+        "fatal_transitions": 1712,
+        "death_probability": 0.0013745540692490232,
+        "expected_pipes": 131.8351575829489,
+        "late_death_per_pipe": 1.2771785015371127e-07,
+        "smallest_decision_margin": 5.110444281086757e-07
+      },
+      "7": {
+        "verified_never_dies": false,
+        "reachable_states": 3587439,
+        "fatal_transitions": 1339,
+        "death_probability": 0.000912383738823519,
+        "expected_pipes": 131.8851625820747,
+        "late_death_per_pipe": 8.759222791384206e-12,
+        "smallest_decision_margin": 2.6404911146471477e-07
+      },
+      "8": {
+        "verified_never_dies": false,
+        "reachable_states": 3678648,
+        "fatal_transitions": 1677,
+        "death_probability": 0.006724607337058597,
+        "expected_pipes": 131.54666912042936,
+        "late_death_per_pipe": 4.976054843987782e-05,
+        "smallest_decision_margin": 3.6540593129075205e-07
+      },
+      "9": {
+        "verified_never_dies": false,
+        "reachable_states": 3438282,
+        "fatal_transitions": 1086,
+        "death_probability": 0.0010472427110020943,
+        "expected_pipes": 131.86915797777104,
+        "late_death_per_pipe": 1.3156528364870222e-08,
+        "smallest_decision_margin": 8.945265683735215e-07
+      },
+      "10": {
+        "verified_never_dies": false,
+        "reachable_states": 3811830,
+        "fatal_transitions": 2307,
+        "death_probability": 0.0006067464958918745,
+        "expected_pipes": 131.9255092878762,
+        "late_death_per_pipe": 1.9833293122193732e-07,
+        "smallest_decision_margin": 3.3970498947155647e-07
+      },
+      "11": {
+        "verified_never_dies": false,
+        "reachable_states": 3428854,
+        "fatal_transitions": 1368,
+        "death_probability": 4.1024472971828985e-05,
+        "expected_pipes": 131.99486768415855,
+        "late_death_per_pipe": 8.642703701400334e-10,
+        "smallest_decision_margin": 3.6871652930869914e-07
+      },
+      "12": {
+        "verified_never_dies": false,
+        "reachable_states": 3476417,
+        "fatal_transitions": 1192,
+        "death_probability": 0.0002665137171300458,
+        "expected_pipes": 131.96656277264455,
+        "late_death_per_pipe": 1.6956058392090795e-08,
+        "smallest_decision_margin": 3.729057240775546e-07
+      },
+      "13": {
+        "verified_never_dies": false,
+        "reachable_states": 3355853,
+        "fatal_transitions": 423,
+        "death_probability": 0.00016547589980420163,
+        "expected_pipes": 131.97928665216457,
+        "late_death_per_pipe": 1.182543399510407e-08,
+        "smallest_decision_margin": 1.1005817235343329e-07
+      },
+      "14": {
+        "verified_never_dies": false,
+        "reachable_states": 3586712,
+        "fatal_transitions": 1396,
+        "death_probability": 0.00475091687770135,
+        "expected_pipes": 131.69186725605886,
+        "late_death_per_pipe": 3.708639659080198e-05,
+        "smallest_decision_margin": 1.4140112014615625e-07
+      },
+      "15": {
+        "verified_never_dies": false,
+        "reachable_states": 3688667,
+        "fatal_transitions": 897,
+        "death_probability": 7.913991233898798e-06,
+        "expected_pipes": 131.99924460542198,
+        "late_death_per_pipe": 2.848857260831318e-08,
+        "smallest_decision_margin": 5.267192211277916e-07
+      },
+      "16": {
+        "verified_never_dies": false,
+        "reachable_states": 3640224,
+        "fatal_transitions": 1116,
+        "death_probability": 3.9170343746341985e-08,
+        "expected_pipes": 131.9999984786969,
+        "late_death_per_pipe": 5.23876096561989e-10,
+        "smallest_decision_margin": 9.593650140971022e-08
+      },
+      "17": {
+        "verified_never_dies": false,
+        "reachable_states": 3805742,
+        "fatal_transitions": 1701,
+        "death_probability": 0.0049748797435946734,
+        "expected_pipes": 131.54009737761353,
+        "late_death_per_pipe": 2.10488125145957e-05,
+        "smallest_decision_margin": 9.574244863586046e-08
+      },
+      "18": {
+        "verified_never_dies": false,
+        "reachable_states": 3735284,
+        "fatal_transitions": 1749,
+        "death_probability": 0.0017145243642624486,
+        "expected_pipes": 131.80313094883027,
+        "late_death_per_pipe": 2.297476577112201e-06,
+        "smallest_decision_margin": 4.3931794735385665e-07
+      },
+      "19": {
+        "verified_never_dies": false,
+        "reachable_states": 3497366,
+        "fatal_transitions": 1779,
+        "death_probability": 0.0005690301046381574,
+        "expected_pipes": 131.9331351282557,
+        "late_death_per_pipe": 1.034720158712902e-07,
+        "smallest_decision_margin": 6.322750021325874e-07
+      }
+    },
+    "lambda0": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 3475933,
+        "fatal_transitions": 1304,
+        "death_probability": 3.092854002839651e-05,
+        "expected_pipes": 131.99883429771924,
+        "late_death_per_pipe": 4.281740365754181e-07,
+        "smallest_decision_margin": 2.469183767672689e-06
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3288053,
+        "fatal_transitions": 968,
+        "death_probability": 2.0271422655815385e-05,
+        "expected_pipes": 131.99768907840536,
+        "late_death_per_pipe": 8.216958464086602e-09,
+        "smallest_decision_margin": 1.9607083601158593e-07
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3393438,
+        "fatal_transitions": 1533,
+        "death_probability": 0.0007432768340140949,
+        "expected_pipes": 131.90824412649778,
+        "late_death_per_pipe": 2.901078825620107e-07,
+        "smallest_decision_margin": 2.029399338354665e-06
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3511001,
+        "fatal_transitions": 1823,
+        "death_probability": 0.003294094560689742,
+        "expected_pipes": 131.57772654790637,
+        "late_death_per_pipe": 2.512575430589301e-07,
+        "smallest_decision_margin": 1.549490029617573e-07
+      }
+    },
+    "no_hard_pipes": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 3515974,
+        "fatal_transitions": 1316,
+        "death_probability": 0.00016363276951525396,
+        "expected_pipes": 131.97914763000819,
+        "late_death_per_pipe": 1.2898060283284432e-10,
+        "smallest_decision_margin": 4.1258266136878774e-08
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3641440,
+        "fatal_transitions": 1261,
+        "death_probability": 0.0016335445145405636,
+        "expected_pipes": 131.85797536141962,
+        "late_death_per_pipe": 8.112081113534312e-06,
+        "smallest_decision_margin": 1.8359826725600215e-07
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3632725,
+        "fatal_transitions": 1389,
+        "death_probability": 0.00029655536058093013,
+        "expected_pipes": 131.96265603439744,
+        "late_death_per_pipe": 2.3599183320322788e-08,
+        "smallest_decision_margin": 6.995371233387004e-07
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3737325,
+        "fatal_transitions": 1149,
+        "death_probability": 0.0007382045797117431,
+        "expected_pipes": 131.93478679639315,
+        "late_death_per_pipe": 3.496834195214653e-06,
+        "smallest_decision_margin": 9.365647191117432e-07
+      }
+    },
+    "no_layernorm": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 4175175,
+        "fatal_transitions": 1498,
+        "death_probability": 0.0013849996706671863,
+        "expected_pipes": 131.83892616974003,
+        "late_death_per_pipe": 1.3301941067664424e-06,
+        "smallest_decision_margin": 6.279663509189959e-07
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3859873,
+        "fatal_transitions": 463,
+        "death_probability": 0.003443840266309617,
+        "expected_pipes": 131.6184453800813,
+        "late_death_per_pipe": 6.055529492057565e-06,
+        "smallest_decision_margin": 7.977334650632883e-07
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3801793,
+        "fatal_transitions": 638,
+        "death_probability": 0.0003889667308917266,
+        "expected_pipes": 131.9520794718655,
+        "late_death_per_pipe": 7.159007447962252e-08,
+        "smallest_decision_margin": 2.2584213610343795e-06
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3947267,
+        "fatal_transitions": 1089,
+        "death_probability": 0.008711379653720708,
+        "expected_pipes": 130.89199994523878,
+        "late_death_per_pipe": 1.8846119565478343e-06,
+        "smallest_decision_margin": 9.120241095672554e-07
+      }
+    },
+    "no_margin": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 3447013,
+        "fatal_transitions": 426,
+        "death_probability": 6.650229056881507e-05,
+        "expected_pipes": 131.99411698227647,
+        "late_death_per_pipe": 3.089436008127325e-07,
+        "smallest_decision_margin": 7.367089711607377e-07
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3410513,
+        "fatal_transitions": 364,
+        "death_probability": 0.0019299863986877996,
+        "expected_pipes": 131.8502675343384,
+        "late_death_per_pipe": 1.1990148748238357e-05,
+        "smallest_decision_margin": 1.514719158990374e-07
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3192284,
+        "fatal_transitions": 449,
+        "death_probability": 0.0015425028066721191,
+        "expected_pipes": 131.89680215924687,
+        "late_death_per_pipe": 1.1610828991081677e-05,
+        "smallest_decision_margin": 1.7092236550553253e-06
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3951449,
+        "fatal_transitions": 514,
+        "death_probability": 0.056069528241326716,
+        "expected_pipes": 128.28013824110138,
+        "late_death_per_pipe": 0.00044474574276731594,
+        "smallest_decision_margin": 5.4815512129380295e-09
+      }
+    },
+    "no_margin_no_hard_pipes": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 3683853,
+        "fatal_transitions": 393,
+        "death_probability": 0.0409141824137943,
+        "expected_pipes": 129.177439636052,
+        "late_death_per_pipe": 0.0003057689564286191,
+        "smallest_decision_margin": 1.6031037830543937e-07
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3151401,
+        "fatal_transitions": 213,
+        "death_probability": 0.023486441405255687,
+        "expected_pipes": 128.93129595586683,
+        "late_death_per_pipe": 3.2912944796505604e-12,
+        "smallest_decision_margin": 1.0285285121369725e-06
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3483526,
+        "fatal_transitions": 348,
+        "death_probability": 0.04404471204629812,
+        "expected_pipes": 129.14960614496474,
+        "late_death_per_pipe": 0.00035331806283048347,
+        "smallest_decision_margin": 6.004262154135631e-08
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3678635,
+        "fatal_transitions": 268,
+        "death_probability": 0.0028815933737044164,
+        "expected_pipes": 131.67816335254957,
+        "late_death_per_pipe": 6.026967795324342e-06,
+        "smallest_decision_margin": 3.555178196279485e-08
+      }
+    },
+    "no_restarts": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 3442624,
+        "fatal_transitions": 1011,
+        "death_probability": 0.0014021919482254397,
+        "expected_pipes": 131.8431280426601,
+        "late_death_per_pipe": 2.4948278447521187e-06,
+        "smallest_decision_margin": 3.7326877233567757e-07
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3601250,
+        "fatal_transitions": 1777,
+        "death_probability": 0.01329596323558413,
+        "expected_pipes": 130.48119720918683,
+        "late_death_per_pipe": 1.5151030753673636e-05,
+        "smallest_decision_margin": 1.6287127202474494e-07
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3636369,
+        "fatal_transitions": 1726,
+        "death_probability": 0.0026159303365680397,
+        "expected_pipes": 131.67634962587763,
+        "late_death_per_pipe": 1.8045997762780314e-08,
+        "smallest_decision_margin": 3.1168875480602765e-08
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3522844,
+        "fatal_transitions": 945,
+        "death_probability": 0.0015964315119730843,
+        "expected_pipes": 131.81236424916847,
+        "late_death_per_pipe": 1.5340054256649572e-06,
+        "smallest_decision_margin": 5.648918275369397e-07
+      }
+    },
+    "raw_features": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 3818950,
+        "fatal_transitions": 1272,
+        "death_probability": 0.0002597464347021683,
+        "expected_pipes": 131.96749018214518,
+        "late_death_per_pipe": 4.1133755021046e-10,
+        "smallest_decision_margin": 1.3333790835901027e-06
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3446715,
+        "fatal_transitions": 1198,
+        "death_probability": 0.0006141075542901442,
+        "expected_pipes": 131.92300843019177,
+        "late_death_per_pipe": 5.63818359885662e-09,
+        "smallest_decision_margin": 1.2817312953217197e-06
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3979454,
+        "fatal_transitions": 721,
+        "death_probability": 0.00022157721526383511,
+        "expected_pipes": 131.97184889866006,
+        "late_death_per_pipe": 1.6641229356313568e-08,
+        "smallest_decision_margin": 1.1645973074791982e-08
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3612016,
+        "fatal_transitions": 1689,
+        "death_probability": 0.0008691260402702294,
+        "expected_pipes": 131.88942121206236,
+        "late_death_per_pipe": 1.1432246355691935e-10,
+        "smallest_decision_margin": 6.897045849996175e-07
+      }
+    },
+    "uniform_explore": {
+      "0": {
+        "verified_never_dies": false,
+        "reachable_states": 3563560,
+        "fatal_transitions": 885,
+        "death_probability": 4.5387884908043574e-05,
+        "expected_pipes": 131.9951785519738,
+        "late_death_per_pipe": 2.9407498633328913e-08,
+        "smallest_decision_margin": 2.530618877116808e-06
+      },
+      "1": {
+        "verified_never_dies": false,
+        "reachable_states": 3461164,
+        "fatal_transitions": 1109,
+        "death_probability": 0.0006128774260276693,
+        "expected_pipes": 131.92891773057872,
+        "late_death_per_pipe": 8.116363784601781e-07,
+        "smallest_decision_margin": 1.1436334421688343e-06
+      },
+      "2": {
+        "verified_never_dies": false,
+        "reachable_states": 3520276,
+        "fatal_transitions": 690,
+        "death_probability": 0.0003713544122124768,
+        "expected_pipes": 131.9569807918009,
+        "late_death_per_pipe": 4.5468772479269923e-07,
+        "smallest_decision_margin": 2.6062432372242483e-06
+      },
+      "3": {
+        "verified_never_dies": false,
+        "reachable_states": 3508214,
+        "fatal_transitions": 1202,
+        "death_probability": 0.0015074315257358473,
+        "expected_pipes": 131.81462494724846,
+        "late_death_per_pipe": 2.5310428520342686e-07,
+        "smallest_decision_margin": 2.4315516711226337e-08
+      }
+    }
+  },
+  "verification_full_method": {
+    "training_seeds": 20,
+    "seeds_verified_never_dying": 0,
+    "death_probability_per_seed": [
+      4.0618886032461887e-10,
+      0.0006067464958918745,
+      4.1024472971828985e-05,
+      0.0002665137171300458,
+      0.00016547589980420163,
+      0.00475091687770135,
+      7.913991233898798e-06,
+      3.9170343746341985e-08,
+      0.0049748797435946734,
+      0.0017145243642624486,
+      0.0005690301046381574,
+      0.0011674501489005173,
+      0.00034857122605680413,
+      0.003473901711078753,
+      0.000346652122019675,
+      6.5424199391372895e-09,
+      0.0013745540692490232,
+      0.000912383738823519,
+      0.006724607337058597,
+      0.0010472427110020943
+    ],
+    "median_death_probability": 0.0005878883002650159
+  },
+  "ablation_tests": {
+    "no_margin_no_hard_pipes": {
+      "seeds": 4,
+      "median_death_probability": 0.03220031190952499,
+      "ratio_to_full_median": 54.77284017220502,
+      "probability_full_seed_is_safer": 0.95,
+      "p_value_exact_mann_whitney": 0.002258610954263128
+    },
+    "no_margin": {
+      "seeds": 4,
+      "median_death_probability": 0.0017362446026799594,
+      "ratio_to_full_median": 2.953357979563928,
+      "probability_full_seed_is_safer": 0.7,
+      "p_value_exact_mann_whitney": 0.24054206662902314
+    },
+    "no_hard_pipes": {
+      "seeds": 4,
+      "median_death_probability": 0.0005173799701463366,
+      "ratio_to_full_median": 0.8800650904484838,
+      "probability_full_seed_is_safer": 0.475,
+      "p_value_exact_mann_whitney": 0.9109730848861284
+    },
+    "no_restarts": {
+      "seeds": 4,
+      "median_death_probability": 0.002106180924270562,
+      "ratio_to_full_median": 3.5826209219015084,
+      "probability_full_seed_is_safer": 0.825,
+      "p_value_exact_mann_whitney": 0.04536043666478449
+    },
+    "raw_features": {
+      "seeds": 4,
+      "median_death_probability": 0.00043692699449615624,
+      "ratio_to_full_median": 0.743214304995001,
+      "probability_full_seed_is_safer": 0.425,
+      "p_value_exact_mann_whitney": 0.6815358554488989
+    },
+    "lambda0": {
+      "seeds": 4,
+      "median_death_probability": 0.00038710268702124573,
+      "ratio_to_full_median": 0.6584629883716729,
+      "probability_full_seed_is_safer": 0.4375,
+      "p_value_exact_mann_whitney": 0.7368718238283456
+    },
+    "uniform_explore": {
+      "seeds": 4,
+      "median_death_probability": 0.000492115919120073,
+      "ratio_to_full_median": 0.8370908536506521,
+      "probability_full_seed_is_safer": 0.5,
+      "p_value_exact_mann_whitney": 1.0
+    },
+    "no_layernorm": {
+      "seeds": 4,
+      "median_death_probability": 0.0024144199684884016,
+      "ratio_to_full_median": 4.10693658540236,
+      "probability_full_seed_is_safer": 0.75,
+      "p_value_exact_mann_whitney": 0.13495200451722192
+    }
+  },
+  "protocol": {
+    "validation": {
+      "training_seeds": 20,
+      "episodes": 2000,
+      "mean_pipes_per_seed": {
+        "0": 132.0,
+        "1": 132.0,
+        "2": 132.0,
+        "3": 131.6,
+        "4": 132.0,
+        "5": 132.0,
+        "6": 132.0,
+        "7": 132.0,
+        "8": 132.0,
+        "9": 132.0,
+        "10": 131.87,
+        "11": 132.0,
+        "12": 132.0,
+        "13": 132.0,
+        "14": 132.0,
+        "15": 132.0,
+        "16": 132.0,
+        "17": 132.0,
+        "18": 132.0,
+        "19": 132.0
+      },
+      "iqm_over_seeds": 132.0,
+      "iqm_ci95": [
+        132.0,
+        132.0
+      ],
+      "mean_over_seeds": 131.9735,
+      "min_episode_pipes": 92,
+      "deaths": 2,
+      "episodes_at_ceiling": 1998,
+      "episode_death_rate_ci95": [
+        0.00012112759055600859,
+        0.003607628569828303
+      ]
+    },
+    "test": {
+      "training_seeds": 20,
+      "episodes": 2000,
+      "mean_pipes_per_seed": {
+        "0": 132.0,
+        "1": 132.0,
+        "2": 132.0,
+        "3": 132.0,
+        "4": 132.0,
+        "5": 132.0,
+        "6": 132.0,
+        "7": 132.0,
+        "8": 132.0,
+        "9": 132.0,
+        "10": 132.0,
+        "11": 132.0,
+        "12": 132.0,
+        "13": 132.0,
+        "14": 131.12,
+        "15": 132.0,
+        "16": 132.0,
+        "17": 131.62,
+        "18": 132.0,
+        "19": 132.0
+      },
+      "iqm_over_seeds": 132.0,
+      "iqm_ci95": [
+        132.0,
+        132.0
+      ],
+      "mean_over_seeds": 131.93699999999998,
+      "min_episode_pipes": 44,
+      "deaths": 2,
+      "episodes_at_ceiling": 1998,
+      "episode_death_rate_ci95": [
+        0.00012112759055600859,
+        0.003607628569828303
+      ]
+    }
+  },
+  "sampled_vs_exact": {
+    "agents": 52,
+    "intervals_covering_exact_value": 52
+  },
+  "survival_figure_agent": {
+    "variant": "no_margin",
+    "train_seed": 3
+  },
+  "anatomy": {
+    "crash_step": 235,
+    "eval_seed": 10056,
+    "pixels_outside_gap": 9.0,
+    "side": "above the gap",
+    "failing": "sota/runs/ablation/no_restarts_s2/final.npz",
+    "failing_variant": "no_restarts",
+    "failing_train_seed": 2,
+    "reference": "sota/models/pqn_champion.npz"
+  },
+  "large_sample": {
+    "episodes": 10000,
+    "max_episode_steps": 5000,
+    "total_steps": 50000000,
+    "total_pipes": 1320000,
+    "deaths": 0,
+    "longest_episode_pipes": 132,
+    "hours_of_play_at_30fps": 462.962962962963,
+    "death_rate_per_pipe_upper95": 2.269491571338378e-06,
+    "death_rate_per_episode_upper95": 0.00029952835977664627
+  },
+  "endurance": {
+    "episodes": 32,
+    "max_episode_steps": 1000000,
+    "total_steps": 32000000,
+    "total_pipes": 849536,
+    "deaths": 0,
+    "longest_episode_pipes": 26548,
+    "hours_of_play_at_30fps": 296.2962962962963,
+    "death_rate_per_pipe_upper95": 3.526309646173509e-06,
+    "death_rate_per_episode_upper95": 0.0893681989862648
+  },
+  "champion": {
+    "checkpoint": "sota/models/full_s0/final.npz",
+    "train_seed": 0,
+    "death_probability": 4.0618886032461887e-10,
+    "selected_by": "lowest exact death probability within a 5,000-step episode",
+    "candidates": 20,
+    "reachable_states": 3373969,
+    "fatal_transitions": 1128,
+    "verified_never_dies": false,
+    "exact_horizon_steps": 20000,
+    "exact_death_probability": 3.039957841011187e-09,
+    "exact_expected_pipes": 529.9999992999268,
+    "late_death_probability_per_pipe": 6.66356269162063e-12,
+    "smallest_decision_margin": 9.312768973757102e-07
+  }
+}

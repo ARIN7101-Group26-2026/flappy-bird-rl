@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-11-21T13:53:17.815225+00:00",
+  "python": "3.12.3",
+  "platform": "Linux-6.8.0-55-generic-x86_64-with-glibc2.39",
+  "packages": {
+    "flappy-bird-rl": "0.1.0",
+    "flappy-bird-gymnasium": "0.4.0",
+    "gymnasium": "1.4.0",
+    "numpy": "2.2.6",
+    "pygame": "2.6.1",
+    "matplotlib": "3.10.8",
+    "imageio": "2.37.0",
+    "imageio-ffmpeg": "0.6.0",
+    "pillow": "12.3.0"
+  },
+  "environment": {
+    "env_id": "FlappyBird-v0",
+    "use_lidar": false,
+    "normalize_obs": true,
+    "max_episode_steps": 5000,
+    "pipe_gap": 100
+  },
+  "experiment": {
+    "agent": "PQN",
+    "config": "variant name taken from each run directory",
+    "splits": {
+      "test": [
+        10000,
+        10099
+      ]
+    },
+    "episodes_per_split": 100,
+    "action_seed_offset": 1000000,
+    "policy": "greedy argmax over Q-values (deterministic)",
+    "checkpoints": [
+      "sota/runs/ablation/lambda0_s0/final.npz",
+      "sota/runs/ablation/lambda0_s1/final.npz",
+      "sota/runs/ablation/lambda0_s2/final.npz",
+      "sota/runs/ablation/lambda0_s3/final.npz",
+      "sota/runs/ablation/no_hard_pipes_s0/final.npz",
+      "sota/runs/ablation/no_hard_pipes_s1/final.npz",
+      "sota/runs/ablation/no_hard_pipes_s2/final.npz",
+      "sota/runs/ablation/no_hard_pipes_s3/final.npz",
+      "sota/runs/ablation/no_layernorm_s0/final.npz",
+      "sota/runs/ablation/no_layernorm_s1/final.npz",
+      "sota/runs/ablation/no_layernorm_s2/final.npz",
+      "sota/runs/ablation/no_layernorm_s3/final.npz",
+      "sota/runs/ablation/no_margin_no_hard_pipes_s0/final.npz",
+      "sota/runs/ablation/no_margin_no_hard_pipes_s1/final.npz",
+      "sota/runs/ablation/no_margin_no_hard_pipes_s2/final.npz",
+      "sota/runs/ablation/no_margin_no_hard_pipes_s3/final.npz",
+      "sota/runs/ablation/no_margin_s0/final.npz",
+      "sota/runs/ablation/no_margin_s1/final.npz",
+      "sota/runs/ablation/no_margin_s2/final.npz",
+      "sota/runs/ablation/no_margin_s3/final.npz",
+      "sota/runs/ablation/no_restarts_s0/final.npz",
+      "sota/runs/ablation/no_restarts_s1/final.npz",
+      "sota/runs/ablation/no_restarts_s2/final.npz",
+      "sota/runs/ablation/no_restarts_s3/final.npz",
+      "sota/runs/ablation/raw_features_s0/final.npz",
+      "sota/runs/ablation/raw_features_s1/final.npz",
+      "sota/runs/ablation/raw_features_s2/final.npz",
+      "sota/runs/ablation/raw_features_s3/final.npz",
+      "sota/runs/ablation/uniform_explore_s0/final.npz",
+      "sota/runs/ablation/uniform_explore_s1/final.npz",
+      "sota/runs/ablation/uniform_explore_s2/final.npz",
+      "sota/runs/ablation/uniform_explore_s3/final.npz"
+    ]
+  },
+  "reward": "original environment reward (no shaping)",
+  "std_definition": "sample standard deviation (ddof=1); 0 for one episode"
+}

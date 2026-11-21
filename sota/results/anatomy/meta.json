@@ -1,0 +1,8 @@
+{
+  "eval_seed": 10056,
+  "failing": "sota/runs/ablation/no_restarts_s2/final.npz",
+  "failing_variant": "no_restarts",
+  "failing_train_seed": 2,
+  "reference": "sota/models/pqn_champion.npz",
+  "crash_step": 235
+}
