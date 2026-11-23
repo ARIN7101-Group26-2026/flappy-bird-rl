@@ -1,7 +1,7 @@
 """Record the trained agent on the shared environment, in the framework's video format.
 
     python -m sota.record --checkpoint sota/models/pqn_champion.npz \
-        --output sota/videos/pqn_demo.mp4 --episodes 1 --seed-start 42
+        --output videos/pqn/pqn_demo.mp4 --episodes 1 --seed-start 42
 
 Episodes are recorded consecutively from the demo seeds; nothing is cherry-picked.
 ``--frame-skip k`` keeps every k-th frame (a k-times fast-forward) and says so on screen.
@@ -116,7 +116,7 @@ def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description="Record the PQN agent")
     parser.add_argument("--checkpoint", type=Path, default=Path("sota/models/pqn_champion.npz"))
     parser.add_argument("--env-config", type=Path, default=Path("configs/env.json"))
-    parser.add_argument("--output", type=Path, default=Path("sota/videos/pqn_demo.mp4"))
+    parser.add_argument("--output", type=Path, default=Path("videos/pqn/pqn_demo.mp4"))
     parser.add_argument("--episodes", type=int, default=1)
     parser.add_argument("--seed-start", type=int, default=42)
     parser.add_argument("--frame-skip", type=int, default=1)

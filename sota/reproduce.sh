@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# The full pipeline behind sota/results, sota/models and sota/videos.
+# The full pipeline behind sota/results, sota/models and videos/pqn.
 # Run from the repository root after: python -m pip install -e '.[dev,sota]'
 # About an hour on a 32-thread CPU: 52 training runs, then verification and evaluation.
 set -euo pipefail
@@ -46,5 +46,5 @@ python -m sota.evaluate stress --checkpoints sota/models/pqn_champion.npz \
 python -m sota.anatomy --failing "${ANATOMY_FAILING:-sota/runs/ablation/no_restarts_s2/final.npz}" \
   --reference sota/models/pqn_champion.npz --seed 10056
 python -m sota.record --checkpoint sota/models/pqn_champion.npz \
-  --output sota/videos/pqn_demo.mp4 --episodes 1 --seed-start 42
+  --output videos/pqn/pqn_demo.mp4 --episodes 1 --seed-start 42
 python -m sota.analyze report

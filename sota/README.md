@@ -39,7 +39,8 @@ numbers line up with every other agent in this repository.
 | [evaluate.py](evaluate.py), [stats.py](stats.py), [analyze.py](analyze.py) | Evaluation, statistics, figures |
 | [models/](models/) | The best agent and all 20 main agents (`.npz`, about 290 kB each) |
 | [results/](results/) | Every number and figure below, as CSV, JSON and PNG |
-| [videos/](videos/) | A full 5,000-step episode |
+| [../videos/pqn/](../videos/pqn/) | A full 5,000-step episode |
+| [../docs/pqn_effect_comparison.pdf](../docs/pqn_effect_comparison.pdf) | Results comparison as a PDF, in Chinese |
 | [reproduce.sh](reproduce.sh) | The whole pipeline, start to finish |
 
 ## 1. Why this approach
@@ -286,10 +287,10 @@ Files: [anatomy/](results/anatomy/), [protocol_ablation/pqn_results.csv](results
 
 ### 4.6 Recording
 
-[videos/pqn_demo.mp4](videos/pqn_demo.mp4) is one full episode of the best agent on demo
+[videos/pqn/pqn_demo.mp4](../videos/pqn/pqn_demo.mp4) is one full episode of the best agent on demo
 seed 42: 5,000 steps, 132 pipes, in real time (2 minutes 47 seconds).
 
-[![PQN agent](videos/pqn_demo.png)](videos/pqn_demo.mp4)
+[![PQN agent](../videos/pqn/pqn_demo.png)](../videos/pqn/pqn_demo.mp4)
 
 ## 5. Tried and dropped
 

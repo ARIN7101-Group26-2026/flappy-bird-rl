@@ -149,7 +149,8 @@ The track also contains an exhaustive verifier. It enumerates every game state a
 
 - [Report](sota/README.md): method, results, ablations, limitations.
 - [Research notes](sota/RESEARCH.md): public results on this game and the algorithms considered.
-- [Recording](sota/videos/pqn_demo.mp4): one full 5,000-step episode.
+- [Recording](videos/pqn/pqn_demo.mp4): one full 5,000-step episode.
+- [Results comparison (PDF, Chinese)](docs/pqn_effect_comparison.pdf): baseline, protocol results, exact risk, ablations.
 
 ```bash
 # Play the committed agent on the test split, then re-run its exhaustive check.
