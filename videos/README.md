@@ -26,7 +26,7 @@ Recordings are organized by algorithm. Each video is accompanied by an episode C
 
 [![PQN agent](pqn/pqn_demo.png)](pqn/pqn_demo.mp4)
 
-The agent, its training, and its evaluation are described in [sota/README.md](../sota/README.md). A results comparison in Chinese is in [docs/pqn_effect_comparison.pdf](../docs/pqn_effect_comparison.pdf).
+The agent, its training, and its evaluation are described in [sota/README.md](../sota/README.md). A results comparison is in [docs/pqn_effect_comparison.pdf](../docs/pqn_effect_comparison.pdf).
 
 ## Reproduce
 

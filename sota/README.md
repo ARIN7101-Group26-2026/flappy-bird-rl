@@ -40,7 +40,7 @@ numbers line up with every other agent in this repository.
 | [models/](models/) | The best agent and all 20 main agents (`.npz`, about 290 kB each) |
 | [results/](results/) | Every number and figure below, as CSV, JSON and PNG |
 | [../videos/pqn/](../videos/pqn/) | A full 5,000-step episode |
-| [../docs/pqn_effect_comparison.pdf](../docs/pqn_effect_comparison.pdf) | Results comparison as a PDF, in Chinese |
+| [../docs/pqn_effect_comparison.pdf](../docs/pqn_effect_comparison.pdf) | Results comparison as a PDF |
 | [reproduce.sh](reproduce.sh) | The whole pipeline, start to finish |
 
 ## 1. Why this approach
