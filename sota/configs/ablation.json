@@ -1,0 +1,33 @@
+{
+  "no_margin_no_hard_pipes": {
+    "train_safety_margin": [
+      0,
+      0
+    ],
+    "train_hard_pipe_prob": 0.0
+  },
+  "no_margin": {
+    "train_safety_margin": [
+      0,
+      0
+    ]
+  },
+  "no_hard_pipes": {
+    "train_hard_pipe_prob": 0.0
+  },
+  "no_restarts": {
+    "train_restart_prob": 0.0
+  },
+  "raw_features": {
+    "features": "raw"
+  },
+  "lambda0": {
+    "q_lambda": 0.0
+  },
+  "uniform_explore": {
+    "explore_flap_prob": 0.5
+  },
+  "no_layernorm": {
+    "layer_norm": false
+  }
+}

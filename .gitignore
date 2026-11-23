@@ -15,3 +15,5 @@ models/**/*.pth
 # Keep the small, verified baseline artifacts; ignore new experiment runs.
 results/*
 !results/random_baseline/
+# Scratch training runs of the standalone high-score track.
+sota/runs/

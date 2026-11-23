@@ -136,6 +136,27 @@ Recordings and their metadata are versioned in the repository under `videos/<alg
 
 [![Random policy comparison](videos/random/random_comparison.png)](videos/random/random_comparison.mp4)
 
+## Standalone High-Score Track: PQN
+
+A self-contained result lives in [`sota/`](sota/README.md), next to the framework rather than inside its algorithm packages. It trains a PQN agent (ICLR 2025) with the shared environment factory and scores it with the shared episode runner, so its episode CSVs follow the same contract as every other agent.
+
+| Agent | Split | Episodes | Mean pipes passed (ceiling 132) | Episodes reaching the time limit |
+| --- | --- | ---: | ---: | ---: |
+| Random, flap probability 0.1 | validation | 100 | 0.07 | 0 |
+| PQN, 20 training seeds | test | 2,000 | 131.94 | 1,998 |
+
+The track also contains an exhaustive verifier. It enumerates every game state a trained policy can reach and returns the exact probability that the agent dies in a 5,000-step episode: 5.9 × 10⁻⁴ for the median of the 20 agents and 4.1 × 10⁻¹⁰ for the best one.
+
+- [Report](sota/README.md): method, results, ablations, limitations.
+- [Research notes](sota/RESEARCH.md): public results on this game and the algorithms considered.
+- [Recording](sota/videos/pqn_demo.mp4): one full 5,000-step episode.
+
+```bash
+# Play the committed agent on the test split, then re-run its exhaustive check.
+python -m sota.evaluate protocol --checkpoints sota/models/pqn_champion.npz --splits test --output-dir results/pqn_check
+python -m sota.verify --checkpoints sota/models/pqn_champion.npz --exact-horizon 5000
+```
+
 ## Project Structure
 
 ```text
@@ -162,6 +183,7 @@ flappy-bird-rl/
 │   ├── plot.py              # Score summaries and distribution plots
 │   ├── demo.py              # Video recording and metadata
 │   └── cli.py               # Command-line entry points
+├── sota/                    # Standalone PQN track: code, models, results, report
 ├── tests/                   # Environment, evaluation, CLI, and video tests
 ├── docs/                    # Architecture and experiment documentation
 ├── models/
@@ -207,6 +229,12 @@ For experiments using Stable-Baselines3, PyTorch, and TensorBoard:
 
 ```bash
 python -m pip install -e '.[train]'
+```
+
+To train the standalone PQN agent in `sota/` (playing and verifying it needs no extra):
+
+```bash
+python -m pip install -e '.[sota]'
 ```
 
 To reproduce the recorded dependency snapshot, verified on CPython 3.10 / Linux x86_64:

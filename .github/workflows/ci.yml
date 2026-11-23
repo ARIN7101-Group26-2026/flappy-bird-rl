@@ -22,3 +22,6 @@ jobs:
       - run: flappy-rl check
       - run: flappy-rl random --episodes 3 --output-dir results/ci
       - run: flappy-rl demo --episodes 1 --output videos/random/ci.mp4
+      # Standalone PQN track: play the committed agent, then re-run its exhaustive check.
+      - run: python -m sota.evaluate protocol --checkpoints sota/models/pqn_champion.npz --splits test --episodes 3 --workers 1 --output-dir results/ci_pqn
+      - run: python -m sota.verify --checkpoints sota/models/pqn_champion.npz --workers 1

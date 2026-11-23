@@ -7,6 +7,7 @@ Recordings are organized by algorithm. Each video is accompanied by an episode C
 | Random | [random/](random/) | Uniform random policy and probability comparison |
 | DQN | [dqn/](dqn/) | DQN policy recordings |
 | PPO | [ppo/](ppo/) | PPO policy recordings |
+| PQN (standalone track) | [../sota/videos/](../sota/videos/) | Full 5,000-step episode of the trained agent |
 
 ## Random Policy
 

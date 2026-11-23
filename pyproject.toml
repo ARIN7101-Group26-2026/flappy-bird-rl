@@ -22,6 +22,8 @@ dependencies = [
 [project.optional-dependencies]
 dev = ["pytest>=8,<10", "ruff>=0.9,<1"]
 train = ["stable-baselines3==2.9.0", "tensorboard>=2.9,<3"]
+# Training the standalone PQN agent in sota/. Playing and verifying it needs no extra.
+sota = ["torch>=2.2"]
 
 [project.scripts]
 flappy-rl = "flappy_bird_rl.cli:main"
@@ -31,6 +33,7 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 
 [tool.ruff]
 line-length = 100

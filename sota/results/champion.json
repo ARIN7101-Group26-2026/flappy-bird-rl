@@ -1,0 +1,7 @@
+{
+  "checkpoint": "sota/models/full_s0/final.npz",
+  "train_seed": 0,
+  "death_probability": 4.0618886032461887e-10,
+  "selected_by": "lowest exact death probability within a 5,000-step episode",
+  "candidates": 20
+}
